@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- PREFERENCIAS GENERALES -->
+    <PreferenceCategory
+        android:key="pref_alarm_text"
+        android:title="Texto de la Alarma">
+        <EditTextPreference
+            android:title="Titulo de Alarma"
+            android:summary="Titulo de Alarma"
+            android:key="alarm_title"
+            android:defaultValue="Alarm"
+            />
+        <EditTextPreference
+            android:title="Contenido de la alarma"
+            android:summary="Texto en la alarma"
+            android:key="alarm_content"
+            android:defaultValue="Alarm"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_notification"
+        android:title="Notificaciones">
+        <SwitchPreference
+            android:title="Vibrar"
+            android:key="vibrate"
+            android:defaultValue="true"/>
+        <SwitchPreference
+            android:title="Sonido"
+            android:key="sound"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>
